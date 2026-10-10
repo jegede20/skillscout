@@ -44,6 +44,10 @@ export function Navbar() {
           <ThemeToggle />
           {auth.status === 'authed' ? (
             <>
+              {auth.user?.avatarUrl && (
+                // eslint-disable-next-line @next/next/no-img-element -- user photo, decorative next to the greeting
+                <img src={auth.user.avatarUrl} alt="" className="hidden h-8 w-8 rounded-full object-cover sm:block" />
+              )}
               <span className="hidden text-sm text-muted lg:inline">Hi, {auth.user?.name.split(' ')[0]}</span>
             </>
           ) : (

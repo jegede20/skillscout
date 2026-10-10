@@ -44,6 +44,7 @@ export interface Profile {
   fullName: string;
   email: string;
   bio: string;
+  avatarUrl?: string | null; // demo mode stores a data URL; signed-in users keep it in account metadata
 }
 
 interface State {

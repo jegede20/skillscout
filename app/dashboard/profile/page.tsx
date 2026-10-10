@@ -4,7 +4,9 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useEffect, useState } from 'react';
-import { Pencil, Check, Clock, Map as MapIcon, Eye, Target } from 'lucide-react';
+import { Pencil, Check, Clock, Map as MapIcon, Eye, Target, Camera, Trash2 } from 'lucide-react';
+import { getSupabase, isSupabaseConfigured } from '@/lib/supabase/browser';
+import { blobToDataUrl, resizeAvatar } from '@/lib/avatar';
 import { useAuthState } from '@/lib/auth-state';
 import { useSkillStore } from '@/lib/store';
 import { useHydrated } from '@/lib/use-hydrated';
@@ -28,6 +30,8 @@ export default function ProfilePage() {
   const interests = useSkillStore((s) => s.interests);
   const [editing, setEditing] = useState(false);
   const [savedMsg, setSavedMsg] = useState(false);
+  const [photoBusy, setPhotoBusy] = useState(false);
+  const [photoError, setPhotoError] = useState('');
 
   const {
     register,
@@ -54,6 +58,51 @@ export default function ProfilePage() {
     .join('')
     .toUpperCase();
 
+  // Signed in with Supabase: the photo is stored by the server and its URL kept in account metadata.
+  // Demo mode: the resized photo is kept in the browser store as a data URL.
+  const onPickPhoto = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    e.target.value = '';
+    if (!file) return;
+    setPhotoError('');
+    setPhotoBusy(true);
+    try {
+      const blob = await resizeAvatar(file);
+      if (isSupabaseConfigured) {
+        const form = new FormData();
+        form.append('file', blob, 'avatar.jpg');
+        const res = await fetch('/api/avatar', { method: 'POST', body: form });
+        const body = (await res.json().catch(() => ({}))) as { url?: string; error?: string };
+        if (!res.ok || !body.url) throw new Error(body.error || 'Could not save the photo.');
+        const { error } = await getSupabase().auth.updateUser({ data: { avatar_url: body.url } });
+        if (error) throw new Error('The photo was saved, but your account could not be updated. Try again.');
+      } else {
+        updateProfile({ avatarUrl: await blobToDataUrl(blob) });
+      }
+    } catch (err) {
+      setPhotoError(err instanceof Error ? err.message : 'Could not save the photo.');
+    } finally {
+      setPhotoBusy(false);
+    }
+  };
+
+  const removePhoto = async () => {
+    setPhotoError('');
+    setPhotoBusy(true);
+    try {
+      if (isSupabaseConfigured) {
+        const { error } = await getSupabase().auth.updateUser({ data: { avatar_url: null } });
+        if (error) throw new Error('Could not remove the photo. Try again.');
+      } else {
+        updateProfile({ avatarUrl: null });
+      }
+    } catch (err) {
+      setPhotoError(err instanceof Error ? err.message : 'Could not remove the photo.');
+    } finally {
+      setPhotoBusy(false);
+    }
+  };
+
   const onSave = (v: Values) => {
     updateProfile({ fullName: v.fullName, bio: v.bio });
     setEditing(false);
@@ -65,14 +114,40 @@ export default function ProfilePage() {
     <div className="grid min-w-0 grid-cols-[minmax(0,1fr)] gap-8 pb-16 lg:grid-cols-[320px_minmax(0,1fr)]">
       <section aria-labelledby="me-title" className="card-surface h-fit space-y-5 p-6">
         <div className="flex items-center gap-4">
-          <div aria-hidden="true" className="flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-orange via-yellow to-cyan font-display text-2xl font-bold text-black">
-            {initials}
-          </div>
+          {auth.user?.avatarUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element -- user photo from Supabase Storage or a local data URL
+            <img src={auth.user.avatarUrl} alt="Your profile photo" className="h-20 w-20 shrink-0 rounded-2xl object-cover" />
+          ) : (
+            <div aria-hidden="true" className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-orange via-yellow to-cyan font-display text-2xl font-bold text-black">
+              {initials}
+            </div>
+          )}
           <div className="min-w-0">
             <h1 id="me-title" className="truncate font-display text-3xl font-bold">{profile.fullName || auth.user?.name}</h1>
             <p className="truncate text-sm text-muted">{auth.user?.email}</p>
           </div>
         </div>
+
+        <div className="flex flex-wrap items-center gap-2">
+          <label className="btn-ghost !py-1.5 cursor-pointer text-sm has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-orange">
+            <Camera aria-hidden="true" className="h-3.5 w-3.5" />
+            {photoBusy ? 'Saving photo…' : auth.user?.avatarUrl ? 'Change photo' : 'Add photo'}
+            <input
+              type="file"
+              accept="image/*"
+              className="sr-only"
+              disabled={photoBusy}
+              onChange={onPickPhoto}
+              aria-label="Choose a profile photo"
+            />
+          </label>
+          {auth.user?.avatarUrl && (
+            <button type="button" className="btn-ghost !py-1.5 text-sm" disabled={photoBusy} onClick={removePhoto}>
+              <Trash2 aria-hidden="true" className="h-3.5 w-3.5" /> Remove photo
+            </button>
+          )}
+        </div>
+        {photoError && <p role="alert" className="text-sm text-advanced">{photoError}</p>}
 
         {!editing ? (
           <>
