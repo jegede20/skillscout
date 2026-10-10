@@ -7,7 +7,9 @@
   --surface: 255 255 255;
   --fg: 26 26 26;
   --muted: 107 114 128;
-  --line: 229 231 235;
+  --line: 214 219 228;  /* #D6DBE4: borders visible on white cards */
+  --fill: 236 239 244;  /* #ECEFF4: chips, badges, icon tiles */
+  --card-shadow: 0 1px 2px rgb(16 24 40 / 0.06), 0 1px 3px rgb(16 24 40 / 0.04);
   --accent-text: 194 65 12; /* #C2410C: AA-safe orange for small text on light */
   color-scheme: light;
 }
@@ -18,6 +20,8 @@
   --fg: 245 245 245;
   --muted: 156 163 175;
   --line: 42 42 42;
+  --fill: 34 34 34;
+  --card-shadow: none;
   --accent-text: 255 107 43; /* #FF6B2B */
   color-scheme: dark;
 }
@@ -43,6 +47,7 @@
   }
   .card-surface {
     @apply rounded-2xl border border-line bg-surface transition-[transform,box-shadow,border-color] duration-300;
+    box-shadow: var(--card-shadow);
   }
   .card-surface:hover {
     @apply shadow-[0_12px_40px_-12px_rgba(255,107,43,0.45)] border-orange/60;

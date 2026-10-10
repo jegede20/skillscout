@@ -46,7 +46,7 @@ export function WeekAccordion({
           <span
             aria-hidden="true"
             className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg font-mono text-sm font-bold ${
-              total > 0 && done === total ? 'bg-beginner text-black' : 'bg-line text-fg'
+              total > 0 && done === total ? 'bg-beginner text-black' : 'bg-fill text-fg'
             }`}
           >
             {week.week}
@@ -80,7 +80,7 @@ export function WeekAccordion({
               {week.topics.length > 0 && (
                 <ul className="flex flex-wrap gap-1.5">
                   {week.topics.map((t) => (
-                    <li key={t} className="rounded-md bg-line/60 px-2 py-0.5 font-mono text-[11px]">
+                    <li key={t} className="rounded-md bg-fill px-2 py-0.5 font-mono text-[11px]">
                       {t}
                     </li>
                   ))}

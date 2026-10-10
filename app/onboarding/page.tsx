@@ -102,7 +102,7 @@ export default function OnboardingPage() {
             <span
               aria-current={step === n ? 'step' : undefined}
               className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-mono text-sm font-bold ${
-                step >= n ? 'bg-orange text-black' : 'bg-line text-muted'
+                step >= n ? 'bg-orange text-black' : 'bg-fill text-muted'
               }`}
             >
               {step > n ? <Check aria-hidden="true" className="h-4 w-4" /> : n}

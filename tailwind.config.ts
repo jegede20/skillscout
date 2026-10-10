@@ -14,6 +14,7 @@ const config: Config = {
         fg: v('fg'),
         muted: v('muted'),
         line: v('line'),
+        fill: v('fill'),
         accent: v('accent-text'),
         ink: '#1A1A1A',
         orange: '#FF6B2B',
