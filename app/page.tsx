@@ -29,8 +29,10 @@ export default function HomePage() {
   };
 
   return (
-    <main className="space-y-28 pb-10 md:space-y-36">
+    <>
+      {/* Kept outside <main>: as its first child the script would receive the space-y margin and push the hero down. */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+    <main className="space-y-28 pb-10 md:space-y-36">
       <HeroSection resourceCount={RESOURCES.length} />
       <StatsCounter resources={RESOURCES.length} skills={skillCount} learners={LEARNERS} />
 
@@ -51,5 +53,6 @@ export default function HomePage() {
         <Link href="/search">Search all skills</Link>
       </p>
     </main>
+    </>
   );
 }

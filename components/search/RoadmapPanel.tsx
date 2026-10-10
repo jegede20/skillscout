@@ -119,7 +119,7 @@ export function RoadmapPanel(props: RoadmapPanelProps) {
       </div>
 
       {locked && (
-        <div className="absolute inset-0 z-10 flex items-center justify-center rounded-2xl bg-bg/60 p-6 backdrop-blur-md">
+        <div className="absolute inset-0 z-10 flex items-center justify-center rounded-2xl bg-bg/85 p-6 backdrop-blur-md dark:bg-bg/60">
           <div className="max-w-sm rounded-2xl border border-line bg-surface p-6 text-center shadow-2xl">
             <Lock aria-hidden="true" className="mx-auto mb-3 h-7 w-7 text-orange" />
             <p className="font-display text-2xl font-bold">Sign up to unlock your full learning path</p>

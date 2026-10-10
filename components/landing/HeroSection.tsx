@@ -33,11 +33,11 @@ export function HeroSection({ resourceCount }: { resourceCount: number }) {
   return (
     <section ref={ref} aria-labelledby="hero-title" className="relative overflow-hidden">
       {/* decorative blobs */}
-      <div aria-hidden="true" className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-orange/30 blur-3xl" />
-      <div aria-hidden="true" className="pointer-events-none absolute right-0 top-40 h-80 w-80 rounded-full bg-cyan/25 blur-3xl" />
-      <div aria-hidden="true" className="pointer-events-none absolute bottom-0 left-1/3 h-64 w-64 rounded-full bg-yellow/25 blur-3xl" />
+      <div aria-hidden="true" className="pointer-events-none absolute -left-24 top-4 h-72 w-72 rounded-full bg-orange/20 blur-3xl dark:bg-orange/30" />
+      <div aria-hidden="true" className="pointer-events-none absolute right-0 top-24 h-80 w-80 rounded-full bg-cyan/15 blur-3xl dark:bg-cyan/25" />
+      <div aria-hidden="true" className="pointer-events-none absolute bottom-0 left-1/3 h-64 w-64 rounded-full bg-yellow/15 blur-3xl dark:bg-yellow/25" />
 
-      <div className="relative mx-auto max-w-content px-4 pb-16 pt-14 md:pt-24">
+      <div className="relative mx-auto max-w-content px-4 pb-12 pt-8 md:pt-12">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}

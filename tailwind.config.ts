@@ -15,6 +15,7 @@ const config: Config = {
         muted: v('muted'),
         line: v('line'),
         accent: v('accent-text'),
+        ink: '#1A1A1A',
         orange: '#FF6B2B',
         cyan: '#00D4FF',
         yellow: '#FFD600',
