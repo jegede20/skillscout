@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Logo } from '@/components/brand/Logo';
 
-/** Pages where the footer is hidden: the auth forms and the Explore results page. */
-const HIDDEN_ON = ['/auth', '/search'];
+/** Pages where the footer is hidden: the auth forms, the Explore results page, and the profile page. */
+const HIDDEN_ON = ['/auth', '/search', '/dashboard/profile'];
 
 export function Footer() {
   const pathname = usePathname();

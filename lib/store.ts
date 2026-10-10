@@ -17,6 +17,14 @@ export interface SavedRoadmap {
   remote?: boolean; // true when the roadmap lives in Supabase
 }
 
+/**
+ * A saved roadmap is only usable if its plan has the expected shape. Pages read
+ * `roadmap.weeklyRoadmap` directly, so a malformed record would crash the whole page.
+ */
+export function isUsableRoadmap(r: SavedRoadmap | null | undefined): r is SavedRoadmap {
+  return Boolean(r && r.roadmap && Array.isArray(r.roadmap.weeklyRoadmap));
+}
+
 export interface SearchRecord {
   id: string;
   query: string;
@@ -116,8 +124,10 @@ export const useSkillStore = create<State>()(
       },
 
       // Server copy wins. Local-only roadmaps (saved before sign-in or while offline) are kept.
-      replaceRoadmaps: (list) =>
-        set((st) => ({ roadmaps: [...list, ...st.roadmaps.filter((r) => !r.remote && !list.some((x) => x.id === r.id))] })),
+      replaceRoadmaps: (list) => {
+        const usable = list.filter(isUsableRoadmap);
+        set((st) => ({ roadmaps: [...usable, ...st.roadmaps.filter((r) => !r.remote && !usable.some((x) => x.id === r.id))] }));
+      },
 
       replaceSearches: (list) => set({ searches: list.slice(0, 200) }),
 
@@ -153,6 +163,11 @@ export const useSkillStore = create<State>()(
     {
       name: 'skillscout-v1',
       storage: createJSONStorage(() => localStorage),
+      // Drop malformed roadmaps already stored in this browser, so one bad record cannot break the pages.
+      merge: (persisted, current) => {
+        const saved = (persisted ?? {}) as Partial<State>;
+        return { ...current, ...saved, roadmaps: (saved.roadmaps ?? []).filter(isUsableRoadmap) };
+      },
     },
   ),
 );
