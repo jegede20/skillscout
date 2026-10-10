@@ -7,7 +7,7 @@
   --surface: 255 255 255;
   --fg: 26 26 26;
   --muted: 107 114 128;
-  --line: 214 219 228;  /* #D6DBE4: borders visible on white cards */
+  --line: 224 228 236;  /* #E0E4EC: soft but visible borders on white cards */
   --fill: 236 239 244;  /* #ECEFF4: chips, badges, icon tiles */
   --card-shadow: 0 1px 2px rgb(16 24 40 / 0.06), 0 1px 3px rgb(16 24 40 / 0.04);
   --accent-text: 194 65 12; /* #C2410C: AA-safe orange for small text on light */
@@ -34,7 +34,12 @@
     @apply bg-bg text-fg font-body antialiased;
   }
   :focus-visible {
-    @apply outline-none ring-2 ring-orange ring-offset-2 ring-offset-bg rounded-md;
+    outline: none;
+  }
+  /* Buttons and links get the orange ring. Text fields are excluded: they draw their own
+     focus state (border or container), and the ring would add a second box inside them. */
+  :focus-visible:not(input):not(textarea):not(select) {
+    @apply ring-2 ring-orange ring-offset-2 ring-offset-bg rounded-md;
   }
   h1, h2, h3 {
     @apply font-display tracking-tight;
@@ -59,7 +64,7 @@
     @apply inline-flex items-center justify-center gap-2 rounded-full border border-line bg-surface px-4 py-2 font-medium text-fg transition hover:border-orange hover:text-accent disabled:opacity-50 disabled:pointer-events-none;
   }
   .input-base {
-    @apply w-full rounded-xl border border-line bg-surface px-4 py-3 text-fg placeholder:text-muted focus:border-orange focus:outline-none focus:ring-2 focus:ring-orange/40;
+    @apply w-full rounded-xl border border-line bg-surface px-4 py-3 text-fg placeholder:text-muted focus:border-orange focus:outline-none focus:ring-0 focus:shadow-[0_0_0_3px_rgb(255_107_43/0.22)];
   }
   .kinetic-stroke {
     /* Explicit stroke colour: currentColor would inherit the transparent fill and vanish. */
