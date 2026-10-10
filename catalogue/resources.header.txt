@@ -1,0 +1,63 @@
+import type { CategoryId, Difficulty, Format, Resource } from '@/lib/types';
+
+/**
+ * Verified resource catalogue (seed data).
+ * Every entry is a free resource. Entries are the single source of truth for URLs:
+ * the AI is only allowed to reference these ids, and the API always returns these URLs.
+ *
+ * Verification (see catalogue/README.md):
+ * - every URL was requested and returned HTTP 200 (or was checked in a real browser),
+ * - pages blocked to automated checks were checked in a headless browser,
+ * - Kaggle Learn pages sit behind a reCAPTCHA wall for automated checks; they are kept
+ *   but flagged in catalogue/README.md for a manual spot-check,
+ * - Coursera, edX, and free-trial-gated pages were excluded.
+ */
+
+// Deterministic, UUID-shaped id derived from the URL (pure JS, safe in client bundles).
+function idFromUrl(input: string): string {
+  let h1 = 0xdeadbeef ^ input.length;
+  let h2 = 0x41c6ce57 ^ input.length;
+  for (let i = 0; i < input.length; i++) {
+    const ch = input.charCodeAt(i);
+    h1 = Math.imul(h1 ^ ch, 2654435761);
+    h2 = Math.imul(h2 ^ ch, 1597334677);
+  }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  const hex = (n: number) => (n >>> 0).toString(16).padStart(8, '0');
+  const raw = hex(h2) + hex(h1) + hex(h2 ^ h1) + hex(h1 ^ 0x9e3779b9);
+  return `${raw.slice(0, 8)}-${raw.slice(8, 12)}-4${raw.slice(13, 16)}-a${raw.slice(17, 20)}-${raw.slice(20, 32)}`;
+}
+
+function r(
+  title: string,
+  platform: string,
+  url: string,
+  description: string,
+  category: CategoryId,
+  skillTags: string[],
+  format: Format,
+  difficulty: Difficulty,
+  durationHours: number,
+  qualityScore: number,
+  prerequisites: string[] = [],
+): Resource {
+  return {
+    id: idFromUrl(url),
+    title,
+    platform,
+    url,
+    description,
+    category,
+    skillTags,
+    format,
+    difficulty,
+    durationHours,
+    qualityScore,
+    prerequisites,
+    isFree: true,
+    isVerified: true,
+  };
+}
+
+export const RESOURCES: Resource[] = [

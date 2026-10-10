@@ -1,0 +1,278 @@
+category,title,platform,url,format,difficulty,hours,verification,note
+programming,CS50's Introduction to Computer Science,Harvard CS50,https://cs50.harvard.edu/x/,course,beginner,100,HTTP 200,
+programming,"Think Python, 3rd Edition",Allen B. Downey,https://allendowney.github.io/ThinkPython/,book,beginner,30,HTTP 200,
+programming,Automate the Boring Stuff with Python,Al Sweigart,https://automatetheboringstuff.com/,book,beginner,25,HTTP 200,Site root URL (check it is a learning resource)
+programming,The Python Tutorial,Python Software Foundation,https://docs.python.org/3/tutorial/index.html,text,beginner,10,HTTP 200,
+programming,Introduction to Programming in Java,Princeton University,https://introcs.cs.princeton.edu/java/home/,book,beginner,40,HTTP 200,
+programming,Learn C++,LearnCpp.com,https://www.learncpp.com/,text,beginner,80,HTTP 200,Site root URL (check it is a learning resource)
+programming,The Rust Programming Language,Rust Project,https://doc.rust-lang.org/book/,book,beginner,30,HTTP 200,
+programming,A Tour of Go,Go Project,https://go.dev/tour/welcome/1,interactive,beginner,5,HTTP 200,
+programming,Eloquent JavaScript,Marijn Haverbeke,https://eloquentjavascript.net/,book,beginner,40,HTTP 200,Site root URL (check it is a learning resource)
+programming,Learn Git Branching,Peter Cottle,https://learngitbranching.js.org/,interactive,beginner,2,HTTP 200,Site root URL (check it is a learning resource)
+programming,Pro Git,Scott Chacon and Ben Straub,https://git-scm.com/book/en/v2,book,beginner,10,HTTP 200,
+programming,Exercism JavaScript Track,Exercism,https://exercism.org/tracks/javascript,interactive,beginner,30,HTTP 200,
+programming,Codewars,Codewars,https://www.codewars.com/,interactive,beginner,40,HTTP 200,Site root URL (check it is a learning resource)
+programming,Coding Interview University,Yangshun Tay (GitHub),https://github.com/jwasham/coding-interview-university,text,advanced,200,HTTP 200,
+programming,Introduction to Algorithms (6.006),MIT OpenCourseWare,https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/,course,intermediate,60,HTTP 200,
+programming,Scientific Computing with Python,freeCodeCamp,https://www.freecodecamp.org/learn/scientific-computing-with-python/,interactive,beginner,300,HTTP 200,
+programming,Python Tutorials for Beginners,YouTube — Programming with Mosh,https://www.youtube.com/@programmingwithmosh,video,beginner,7,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+programming,Developer Roadmaps,roadmap.sh,https://roadmap.sh/,text,beginner,2,HTTP 200,Site root URL (check it is a learning resource)
+web-development,The Odin Project — Full Stack JavaScript,The Odin Project,https://www.theodinproject.com/paths/full-stack-javascript,course,intermediate,600,HTTP 200,
+web-development,Full Stack Open,University of Helsinki,https://fullstackopen.com/en/,course,intermediate,100,HTTP 200,
+web-development,MDN Learn Web Development,MDN Web Docs,https://developer.mozilla.org/en-US/docs/Learn_web_development,text,beginner,40,HTTP 200,
+web-development,CS50's Web Programming with Python and JavaScript,Harvard CS50,https://cs50.harvard.edu/web/,course,intermediate,60,HTTP 200,
+web-development,Learn Web Development (curriculum),freeCodeCamp,https://www.freecodecamp.org/learn/,interactive,beginner,300,HTTP 200,
+web-development,JavaScript.info,Ilya Kantor,https://javascript.info/,text,beginner,60,HTTP 200,Site root URL (check it is a learning resource)
+web-development,Learn web development,web.dev (Google),https://web.dev/learn,text,beginner,30,HTTP 200,
+web-development,Learn React,React Team,https://react.dev/learn,interactive,beginner,20,HTTP 200,
+web-development,Learn Next.js,Vercel,https://nextjs.org/learn,interactive,intermediate,10,HTTP 200,
+web-development,Introduction to Node.js,OpenJS Foundation,https://nodejs.org/en/learn/getting-started/introduction-to-nodejs,text,intermediate,5,HTTP 200,
+web-development,Vue.js Guide,Vue.js,https://vuejs.org/guide/introduction.html,text,beginner,15,HTTP 200,
+web-development,Tailwind CSS Documentation,Tailwind Labs,https://tailwindcss.com/docs/installation,text,beginner,5,HTTP 200,
+web-development,Flexbox Froggy,Thomas Park,https://flexboxfroggy.com/,interactive,beginner,1,HTTP 200,Site root URL (check it is a learning resource)
+web-development,CSS Grid Garden,Thomas Park,https://cssgridgarden.com/,interactive,beginner,1,HTTP 200,Site root URL (check it is a learning resource)
+web-development,Web Development Simplified,YouTube — Web Dev Simplified,https://www.youtube.com/@WebDevSimplified,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+web-development,Django Girls Tutorial,Django Girls,https://tutorial.djangogirls.org/en/,text,beginner,20,HTTP 200,
+web-development,The Flask Mega-Tutorial,Miguel Grinberg,https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world,text,intermediate,30,HTTP 200,
+data-science,Kaggle Learn: Pandas,Kaggle Learn,https://www.kaggle.com/learn/pandas,interactive,beginner,4,"Kaggle bot check: not machine-verified, spot-check in browser",
+data-science,Kaggle Learn: Intro to SQL,Kaggle Learn,https://www.kaggle.com/learn/sql,interactive,beginner,3,"Kaggle bot check: not machine-verified, spot-check in browser",
+data-science,Kaggle Learn: Data Cleaning,Kaggle Learn,https://www.kaggle.com/learn/data-cleaning,interactive,beginner,4,"Kaggle bot check: not machine-verified, spot-check in browser",
+data-science,Kaggle Learn: Feature Engineering,Kaggle Learn,https://www.kaggle.com/learn/feature-engineering,interactive,intermediate,4,"Kaggle bot check: not machine-verified, spot-check in browser",
+data-science,Kaggle Learn: Data Visualization,Kaggle Learn,https://www.kaggle.com/learn/data-visualization,interactive,intermediate,4,"Kaggle bot check: not machine-verified, spot-check in browser",
+data-science,Python Data Science Handbook,Jake VanderPlas,https://jakevdp.github.io/PythonDataScienceHandbook/,book,intermediate,40,HTTP 200,
+data-science,R for Data Science (2nd ed.),Hadley Wickham and others,https://r4ds.hadley.nz/,book,beginner,40,HTTP 200,Site root URL (check it is a learning resource)
+data-science,Python for Everybody,Charles Severance,https://www.py4e.com/,course,beginner,60,HTTP 200,Site root URL (check it is a learning resource)
+data-science,Seeing Theory,Brown University,https://seeing-theory.brown.edu/,interactive,beginner,4,HTTP 200,Site root URL (check it is a learning resource)
+data-science,StatQuest with Josh Starmer,YouTube — StatQuest,https://www.youtube.com/@statquest,video,beginner,30,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+data-science,pandas Getting Started,pandas Project,https://pandas.pydata.org/docs/getting_started/index.html,text,beginner,4,HTTP 200,
+data-science,Statistics and Probability,Khan Academy,https://www.khanacademy.org/math/statistics-probability,video,beginner,60,Verified in headless browser,
+data-science,Probabilistic Systems Analysis and Applied Probability,MIT OpenCourseWare,https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/,course,advanced,60,HTTP 200,
+data-science,An Introduction to Statistical Learning,"James, Witten, Hastie, Tibshirani",https://www.statlearning.com/,book,intermediate,50,HTTP 200,Site root URL (check it is a learning resource)
+data-science,"Think Stats, 2nd Edition",Allen B. Downey,https://allendowney.github.io/ThinkStats/,book,intermediate,30,HTTP 200,
+data-science,From Data to Viz,Yan Holtz,https://www.data-to-viz.com/,interactive,beginner,2,HTTP 200,Site root URL (check it is a learning resource)
+ai-ml,Kaggle Learn: Intro to Machine Learning,Kaggle Learn,https://www.kaggle.com/learn/intro-to-machine-learning,interactive,beginner,3,"Kaggle bot check: not machine-verified, spot-check in browser",
+ai-ml,Kaggle Learn: Intro to Deep Learning,Kaggle Learn,https://www.kaggle.com/learn/intro-to-deep-learning,interactive,intermediate,4,"Kaggle bot check: not machine-verified, spot-check in browser",
+ai-ml,Elements of AI,University of Helsinki,https://www.elementsofai.com/,course,beginner,30,HTTP 200,Site root URL (check it is a learning resource)
+ai-ml,Google Machine Learning Crash Course,Google,https://developers.google.com/machine-learning/crash-course,course,beginner,15,HTTP 200,
+ai-ml,Neural Networks — Essence of Learning,3Blue1Brown,https://www.3blue1brown.com/topics/neural-networks,video,beginner,4,HTTP 200,
+ai-ml,Neural Networks: Zero to Hero,Andrej Karpathy,https://karpathy.ai/zero-to-hero.html,video,intermediate,20,HTTP 200,
+ai-ml,Practical Deep Learning for Coders,fast.ai,https://course.fast.ai/,course,intermediate,40,HTTP 200,Site root URL (check it is a learning resource)
+ai-ml,Dive into Deep Learning,d2l.ai,https://d2l.ai/,book,intermediate,80,HTTP 200,Site root URL (check it is a learning resource)
+ai-ml,Introduction to Machine Learning (6.036),MIT OpenCourseWare,https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/,course,intermediate,60,HTTP 200,
+ai-ml,CS229: Machine Learning,Stanford University,https://cs229.stanford.edu/,course,advanced,60,HTTP 200,Site root URL (check it is a learning resource)
+ai-ml,Hugging Face Learn,Hugging Face,https://huggingface.co/learn,course,intermediate,30,HTTP 200,
+ai-ml,PyTorch Tutorials,PyTorch,https://pytorch.org/tutorials/,text,intermediate,20,HTTP 200,
+ai-ml,Essence of Linear Algebra,3Blue1Brown,https://www.3blue1brown.com/topics/linear-algebra,video,beginner,6,HTTP 200,
+ai-ml,Mathematics for Machine Learning,"Deisenroth, Faisal, Ong",https://mml-book.github.io/,book,advanced,60,HTTP 200,Site root URL (check it is a learning resource)
+ai-ml,Speech and Language Processing (draft 3rd ed.),Jurafsky and Martin,https://web.stanford.edu/~jurafsky/slp3/,book,advanced,80,HTTP 200,
+ui-ux-design,Ten Usability Heuristics,Nielsen Norman Group,https://www.nngroup.com/articles/ten-usability-heuristics/,text,beginner,1,HTTP 200,
+ui-ux-design,Nielsen Norman Group Articles,Nielsen Norman Group,https://www.nngroup.com/articles/,text,intermediate,20,HTTP 200,
+ui-ux-design,Usability.gov,U.S. Government,https://www.usability.gov/,text,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+ui-ux-design,Laws of UX,Jon Yablonski,https://lawsofux.com/,text,beginner,1,HTTP 200,Site root URL (check it is a learning resource)
+ui-ux-design,A11y Project Checklist,The A11y Project,https://www.a11yproject.com/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+ui-ux-design,Material Design 3,Google,https://m3.material.io/,text,intermediate,5,HTTP 200,Site root URL (check it is a learning resource)
+ui-ux-design,Human Interface Guidelines,Apple,https://developer.apple.com/design/human-interface-guidelines/,text,intermediate,8,HTTP 200,
+ui-ux-design,UX Design Roadmap,roadmap.sh,https://roadmap.sh/ux-design,text,beginner,3,HTTP 200,
+ui-ux-design,CSS-Tricks,CSS-Tricks,https://css-tricks.com/,text,intermediate,5,HTTP 200,Site root URL (check it is a learning resource)
+ui-ux-design,Interaction Design Foundation Articles,Interaction Design Foundation,https://www.interaction-design.org/literature,text,beginner,10,HTTP 200,
+graphic-design,Practical Typography,Matthew Butterick,https://practicaltypography.com/,book,beginner,6,HTTP 200,Site root URL (check it is a learning resource)
+graphic-design,Google Fonts Knowledge,Google Fonts,https://fonts.google.com/knowledge,text,beginner,5,HTTP 200,
+graphic-design,GIMP Tutorials,GIMP Project,https://www.gimp.org/tutorials/,text,beginner,10,HTTP 200,
+graphic-design,DesignCourse,YouTube — DesignCourse,https://www.youtube.com/@DesignCourse,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+graphic-design,Photopea Learn,Photopea,https://www.photopea.com/learn,text,beginner,5,HTTP 200,
+graphic-design,The Futur,YouTube — The Futur,https://www.youtube.com/@TheFutur,video,intermediate,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+graphic-design,Figma Learn Design,Figma,https://www.figma.com/resources/learn-design/,text,beginner,5,HTTP 200,
+graphic-design,Design Sprint Kit,Google Ventures and Google,https://designsprintkit.withgoogle.com/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+ui-ux-design,Maze Guides,Maze,https://maze.co/guides/,text,beginner,10,HTTP 200,
+ui-ux-design,Design Systems Handbook,DesignBetter.Co,https://www.designbetter.co/design-systems-handbook,book,intermediate,10,HTTP 200,
+ui-ux-design,Smashing Magazine,Smashing Magazine,https://www.smashingmagazine.com/,text,intermediate,10,HTTP 200,Site root URL (check it is a learning resource)
+digital-marketing,Fundamentals of Digital Marketing,Google Digital Garage,https://learndigital.withgoogle.com/digitalgarage/course/digital-marketing,course,beginner,40,HTTP 200,
+digital-marketing,Google Skillshop,Google,https://skillshop.withgoogle.com/,course,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+digital-marketing,HubSpot Academy,HubSpot,https://academy.hubspot.com/,course,beginner,20,HTTP 200,Site root URL (check it is a learning resource)
+digital-marketing,Beginner's Guide to SEO,Moz,https://moz.com/beginners-guide-to-seo,text,beginner,5,Free content; page shows a free-trial banner (check for upsell),
+digital-marketing,Google Analytics Academy,Google,https://analytics.google.com/analytics/academy/,course,beginner,10,HTTP 200,
+digital-marketing,Think with Google,Google,https://www.thinkwithgoogle.com/,text,intermediate,5,HTTP 200,Site root URL (check it is a learning resource)
+digital-marketing,Semrush Academy,Semrush,https://www.semrush.com/academy/,course,beginner,15,Free content; page shows a free-trial banner (check for upsell),
+digital-marketing,Ahrefs Blog,Ahrefs,https://ahrefs.com/blog/,text,intermediate,10,HTTP 200,
+digital-marketing,Content Marketing Institute,Content Marketing Institute,https://contentmarketinginstitute.com/,text,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+digital-marketing,Principles of Marketing,OpenStax,https://openstax.org/details/books/principles-marketing,book,beginner,40,HTTP 200,
+digital-marketing,Ahrefs YouTube Channel,YouTube — Ahrefs,https://www.youtube.com/@AhrefsCom,video,intermediate,15,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+photography,Cambridge in Colour Tutorials,Cambridge in Colour,https://www.cambridgeincolour.com/tutorials.htm,text,beginner,10,HTTP 200,
+photography,Digital Photography School,Digital Photography School,https://digital-photography-school.com/,text,beginner,15,HTTP 200,Site root URL (check it is a learning resource)
+photography,Photography Life Learn,Photography Life,https://photographylife.com/,text,intermediate,15,HTTP 200,Site root URL (check it is a learning resource)
+photography,Peter McKinnon YouTube,YouTube — Peter McKinnon,https://www.youtube.com/@PeterMcKinnon,video,beginner,15,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+photography,Improve Photography,Improve Photography,https://improvephotography.com/,text,beginner,15,HTTP 200,Site root URL (check it is a learning resource)
+photography,PetaPixel How-To,PetaPixel,https://petapixel.com/how-to/,text,beginner,10,HTTP 200,
+video-editing,DaVinci Resolve Training,Blackmagic Design,https://www.blackmagicdesign.com/products/davinciresolve/training,course,beginner,20,HTTP 200,
+video-editing,Shotcut Tutorials,Shotcut,https://www.shotcut.org/tutorials/,text,beginner,5,HTTP 200,
+video-editing,OpenShot User Guide,OpenShot,https://www.openshot.org/user-guide/,text,beginner,5,HTTP 200,
+video-editing,Kdenlive Documentation,Kdenlive,https://docs.kdenlive.org/en/,text,beginner,5,HTTP 200,
+video-editing,Blender Video Sequence Editor Manual,Blender,https://docs.blender.org/manual/en/latest/video_editing/index.html,text,intermediate,5,HTTP 200,
+video-editing,Filmmaker IQ,Filmmaker IQ,https://filmmakeriq.com/,text,intermediate,15,HTTP 200,Site root URL (check it is a learning resource)
+video-editing,No Film School,No Film School,https://nofilmschool.com/,text,intermediate,15,HTTP 200,Site root URL (check it is a learning resource)
+video-editing,Film Riot YouTube,YouTube — Film Riot,https://www.youtube.com/@FilmRiot,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+video-editing,Justin Odisho YouTube,YouTube — Justin Odisho,https://www.youtube.com/@justinodisho,video,intermediate,15,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+music-production,Music Theory Lessons,musictheory.net,https://www.musictheory.net/lessons,interactive,beginner,8,HTTP 200,
+music-production,Learning Music (Ableton),Ableton,https://learningmusic.ableton.com/,interactive,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+music-production,Learning Synths,Ableton,https://learningsynths.ableton.com/,interactive,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+music-production,Ableton Live Manual,Ableton,https://www.ableton.com/en/manual/,text,intermediate,10,HTTP 200,
+music-production,Audacity Manual,Audacity,https://manual.audacityteam.org/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+music-production,Rick Beato YouTube,YouTube — Rick Beato,https://www.youtube.com/@RickBeato,video,intermediate,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+music-production,Adam Neely YouTube,YouTube — Adam Neely,https://www.youtube.com/@AdamNeely,video,intermediate,15,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+graphic-design,Krita Manual,Krita Project,https://docs.krita.org/en/,text,beginner,10,HTTP 200,
+music-production,In The Mix YouTube,YouTube — In The Mix,https://www.youtube.com/@InTheMix,video,beginner,20,Free content; page shows a free-trial banner (check for upsell),"YouTube channel (free, no sign-in needed)"
+photography,Expert Photography,Expert Photography,https://expertphotography.com/,text,beginner,15,HTTP 200,Site root URL (check it is a learning resource)
+photography,Photzy,Photzy,https://photzy.com/,text,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+photography,Fstoppers Articles,Fstoppers,https://fstoppers.com/,text,intermediate,15,HTTP 200,Site root URL (check it is a learning resource)
+video-editing,Wolfcrow,Wolfcrow,https://wolfcrow.com/,text,intermediate,15,HTTP 200,Site root URL (check it is a learning resource)
+video-editing,Premiere Gal YouTube,YouTube — Premiere Gal,https://www.youtube.com/@PremiereGal,video,beginner,15,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+video-editing,Frame.io Insider,Frame.io,https://frame.io/blog,text,intermediate,10,HTTP 200,
+music-production,Teoria Music Theory,Teoria,https://www.teoria.com/,interactive,beginner,8,HTTP 200,Site root URL (check it is a learning resource)
+music-production,Ardour Manual,Ardour,https://manual.ardour.org/,text,intermediate,10,HTTP 200,Site root URL (check it is a learning resource)
+music-production,Produce Like A Pro YouTube,YouTube — Produce Like A Pro,https://www.youtube.com/@ProduceLikeAPro,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+foreign-languages,Language Transfer,Language Transfer,https://www.languagetransfer.org/,course,beginner,20,HTTP 200,Site root URL (check it is a learning resource)
+foreign-languages,Tatoeba,Tatoeba,https://tatoeba.org/,interactive,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+foreign-languages,WordReference,WordReference,https://www.wordreference.com/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+foreign-languages,SpanishDict,SpanishDict,https://www.spanishdict.com/,text,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+foreign-languages,DW Learn German,Deutsche Welle,https://learngerman.dw.com/en/,course,beginner,40,HTTP 200,
+foreign-languages,Tofugu Japanese Guides,Tofugu,https://www.tofugu.com/japanese/,text,beginner,15,HTTP 200,
+foreign-languages,Easy Spanish YouTube,YouTube — Easy Spanish,https://www.youtube.com/@EasySpanish,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+personal-finance,Introduction to Investing,U.S. SEC Investor.gov,https://www.investor.gov/introduction-investing,text,beginner,5,HTTP 200,
+personal-finance,MyMoney.gov,U.S. Government,https://www.mymoney.gov/,text,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+personal-finance,Consumer Tools and Guides,Consumer Financial Protection Bureau,https://www.consumerfinance.gov/consumer-tools/,text,beginner,10,HTTP 200,
+personal-finance,Consumer Information,Federal Reserve,https://www.federalreserve.gov/consumerinfo/,text,beginner,10,HTTP 200,
+personal-finance,Personal Financial Literacy,OpenStax,https://openstax.org/details/books/personal-financial-literacy,book,beginner,40,HTTP 200,
+personal-finance,Fidelity Learning Center,Fidelity,https://www.fidelity.com/learning-center/overview,text,beginner,15,HTTP 200,
+personal-finance,Finance Theory I (15.401),MIT OpenCourseWare,https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/,course,advanced,60,HTTP 200,
+personal-finance,Investopedia,Investopedia,https://www.investopedia.com/,text,beginner,15,Verified in headless browser,Site root URL (check it is a learning resource)
+cooking,Cooking For Engineers,Cooking For Engineers,https://www.cookingforengineers.com/,text,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+cooking,Nutrition Basics,Nutrition.gov,https://www.nutrition.gov/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+cooking,Joshua Weissman YouTube,YouTube — Joshua Weissman,https://www.youtube.com/@JoshuaWeissman,video,intermediate,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+cooking,Food and Cooking Science Basics,BBC Good Food,https://www.bbcgoodfood.com/howto,text,beginner,10,HTTP 200,
+fitness,NHS Exercise Guidance,NHS (UK),https://www.nhs.uk/live-well/exercise/,text,beginner,3,HTTP 200,
+fitness,Physical Activity Fact Sheet,World Health Organization,https://www.who.int/news-room/fact-sheets/detail/physical-activity,text,beginner,2,HTTP 200,
+fitness,Jeff Nippard YouTube,YouTube — Jeff Nippard,https://www.youtube.com/@JeffNippard,video,intermediate,25,Free content; page shows a free-trial banner (check for upsell),"YouTube channel (free, no sign-in needed)"
+fitness,Stronger By Science,Stronger By Science,https://www.strongerbyscience.com/,text,intermediate,20,HTTP 200,Site root URL (check it is a learning resource)
+fitness,ACE Exercise Library,American Council on Exercise,https://www.acefitness.org/resources/everyone/exercise-library/,text,beginner,5,HTTP 200,
+fitness,Health & Medicine,Khan Academy,https://www.khanacademy.org/science/health-and-medicine,video,beginner,20,Verified in headless browser,
+public-speaking,TED-Ed,TED-Ed,https://ed.ted.com/,video,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+public-speaking,How to speak so that people want to listen,TED,https://www.ted.com/talks/julian_treasure_how_to_speak_so_that_people_want_to_listen,video,beginner,0.3,HTTP 200,
+public-speaking,Your body language may shape who you are,TED,https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are,video,beginner,0.3,HTTP 200,
+public-speaking,MIT Communication Lab,MIT,https://mitcommlab.mit.edu/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+public-speaking,Toastmasters Speech Resources,Toastmasters International,https://www.toastmasters.org/resources,text,beginner,5,HTTP 200,
+public-speaking,Pixar in a Box: Storytelling,Khan Academy,https://www.khanacademy.org/computing/pixar,course,beginner,10,Verified in headless browser,
+creative-writing,Reedsy Learning,Reedsy,https://reedsy.com/learning,course,beginner,10,Verified in headless browser,
+creative-writing,Poetry Foundation Learn,Poetry Foundation,https://www.poetryfoundation.org/learn,text,beginner,10,HTTP 200,
+creative-writing,Poetic Forms,Academy of American Poets,https://poets.org/poetic-forms,text,beginner,5,HTTP 200,
+creative-writing,Writing Excuses,Writing Excuses,https://writingexcuses.com/,podcast,intermediate,15,HTTP 200,Site root URL (check it is a learning resource)
+creative-writing,Lit Hub,Literary Hub,https://lithub.com/,text,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+creative-writing,Grammar,Khan Academy,https://www.khanacademy.org/humanities/grammar,video,beginner,10,Verified in headless browser,
+cybersecurity,OverTheWire Wargames,OverTheWire,https://overthewire.org/wargames/,interactive,beginner,40,HTTP 200,
+cybersecurity,PortSwigger Web Security Academy,PortSwigger,https://portswigger.net/web-security,course,intermediate,40,HTTP 200,
+cybersecurity,Cryptopals Crypto Challenges,Matasano / Cryptopals,https://cryptopals.com/,interactive,advanced,40,HTTP 200,Site root URL (check it is a learning resource)
+cybersecurity,Crypto 101,Laurens Van Houtven,https://www.crypto101.io/,book,intermediate,15,HTTP 200,Site root URL (check it is a learning resource)
+cybersecurity,OWASP Top Ten,OWASP,https://owasp.org/www-project-top-ten/,text,beginner,3,HTTP 200,
+cybersecurity,CISA Training,U.S. Cybersecurity and Infrastructure Security Agency,https://www.cisa.gov/resources-tools/training,course,beginner,10,HTTP 200,
+cybersecurity,Kali Linux Documentation,Kali Linux,https://www.kali.org/docs/,text,intermediate,10,HTTP 200,
+cybersecurity,Hacksplaining,Hacksplaining,https://www.hacksplaining.com/,interactive,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+cybersecurity,NetworkChuck YouTube,YouTube — NetworkChuck,https://www.youtube.com/@NetworkChuck,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+cybersecurity,IppSec YouTube,YouTube — IppSec,https://www.youtube.com/@ippsec,video,intermediate,40,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+cybersecurity,TryHackMe,TryHackMe,https://tryhackme.com/,interactive,beginner,40,HTTP 200,Site root URL (check it is a learning resource)
+cybersecurity,Computer Systems Security (6.858),MIT OpenCourseWare,https://ocw.mit.edu/courses/6-858-computer-systems-security-fall-2014/,course,advanced,60,HTTP 200,
+cybersecurity,Cyber Security Roadmap,roadmap.sh,https://roadmap.sh/cyber-security,text,beginner,2,HTTP 200,
+cybersecurity,CS50's Introduction to Cybersecurity,Harvard CS50,https://cs50.harvard.edu/cybersecurity/,course,beginner,30,HTTP 200,
+cloud-computing,Missing Semester of Your CS Education,MIT,https://missing.csail.mit.edu/,course,beginner,15,HTTP 200,Site root URL (check it is a learning resource)
+cloud-computing,Ryan's Linux Tutorial,Ryan Chadwick,https://ryanstutorials.net/linuxtutorial/,text,beginner,10,HTTP 200,
+cloud-computing,Get Started with Docker,Docker,https://docs.docker.com/get-started/,text,beginner,5,HTTP 200,
+cloud-computing,Kubernetes Basics,Kubernetes,https://kubernetes.io/docs/tutorials/kubernetes-basics/,interactive,intermediate,5,HTTP 200,
+cloud-computing,Killercoda,Killercoda,https://killercoda.com/,interactive,intermediate,20,HTTP 200,Site root URL (check it is a learning resource)
+cloud-computing,Terraform Tutorials,HashiCorp,https://developer.hashicorp.com/terraform/tutorials,interactive,intermediate,10,HTTP 200,
+cloud-computing,The Twelve-Factor App,Heroku,https://12factor.net/,text,intermediate,2,HTTP 200,Site root URL (check it is a learning resource)
+cloud-computing,AWS Skill Builder,Amazon Web Services,https://skillbuilder.aws/,course,beginner,20,HTTP 200,Site root URL (check it is a learning resource)
+cloud-computing,Microsoft Learn,Microsoft,https://learn.microsoft.com/training/,course,beginner,30,HTTP 200,
+cloud-computing,Tech World with Nana YouTube,YouTube — TechWorld with Nana,https://www.youtube.com/@TechWorldwithNana,video,intermediate,25,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+cloud-computing,Distributed Systems (MIT 6.5840),MIT OpenCourseWare,https://pdos.csail.mit.edu/6.824/,course,advanced,80,HTTP 200,
+cloud-computing,DevOps Roadmap,roadmap.sh,https://roadmap.sh/devops,text,intermediate,3,HTTP 200,
+foreign-languages,Duolingo,Duolingo,https://www.duolingo.com/,interactive,beginner,30,HTTP 200,Site root URL (check it is a learning resource)
+cooking,Compound Chem Food Science,Compound Interest,https://www.compoundchem.com/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+cooking,King Arthur Baking Learn,King Arthur Baking,https://www.kingarthurbaking.com/learn,text,beginner,15,HTTP 200,
+cooking,Food Standards Agency Eat Well,UK Food Standards Agency,https://www.food.gov.uk/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+cooking,Eat Well (NHS),NHS (UK),https://www.nhs.uk/live-well/eat-well/,text,beginner,5,HTTP 200,
+cooking,Kenji López-Alt YouTube,YouTube — J. Kenji López-Alt,https://www.youtube.com/@JKenjiLopezAlt,video,intermediate,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+cooking,America's Test Kitchen YouTube,YouTube — America's Test Kitchen,https://www.youtube.com/@AmericasTestKitchen,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+cooking,Cooking Lessons Articles,Epicurious,https://www.epicurious.com/expert-advice,text,beginner,10,HTTP 200,
+cooking,Nutrition Basics for Healthy Eating,Harvard T.H. Chan School of Public Health,https://www.hsph.harvard.edu/nutritionsource/,text,beginner,10,HTTP 200,
+public-speaking,Simon Sinek: How great leaders inspire action,TED,https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action,video,beginner,0.3,HTTP 200,
+public-speaking,TED YouTube,YouTube — TED,https://www.youtube.com/@TED,video,beginner,25,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+public-speaking,TED Talks Official Site,TED,https://www.ted.com/talks,video,beginner,25,HTTP 200,
+public-speaking,Speaking Guides and Tools,Toastmasters Pathways,https://www.toastmasters.org/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+creative-writing,Literary Devices,Literary Devices,https://literarydevices.net/,text,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+creative-writing,The Write Practice,The Write Practice,https://thewritepractice.com/,text,beginner,15,HTTP 200,Site root URL (check it is a learning resource)
+creative-writing,Jane Friedman Blog,Jane Friedman,https://janefriedman.com/blog/,text,intermediate,15,HTTP 200,
+creative-writing,Helping Writers Become Authors,K.M. Weiland,https://www.helpingwritersbecomeauthors.com/,text,intermediate,15,Verified in headless browser,Site root URL (check it is a learning resource)
+creative-writing,Critters Writers Workshop,Critters,https://www.critters.org/,text,intermediate,15,Verified in headless browser,Site root URL (check it is a learning resource)
+creative-writing,Nathan Bransford Blog,Nathan Bransford,https://nathanbransford.com/,text,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+creative-writing,Poets.org Learn,Academy of American Poets,https://poets.org/,text,beginner,15,HTTP 200,Site root URL (check it is a learning resource)
+creative-writing,Purdue OWL Writing and Grammar,Purdue OWL,https://owl.purdue.edu/owl/purdue_owl.html,text,beginner,15,HTTP 200,
+creative-writing,MIT Writing and Communication Center,MIT,https://cmsw.mit.edu/writing-and-communication-center/,text,beginner,10,Verified in headless browser,
+fitness,Scott Herman Fitness YouTube,YouTube — Scott Herman,https://www.youtube.com/@ScottHermanFitness,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+fitness,Athlean-X YouTube,YouTube — Athlean-X,https://www.youtube.com/@athleanx,video,intermediate,25,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+fitness,Physical Activity Guidelines for Americans,U.S. Department of Health and Human Services,https://health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines,text,beginner,3,HTTP 200,
+fitness,Exercise (NHS),NHS (UK),https://www.nhs.uk/live-well/exercise/running-and-aerobic-exercises/,text,beginner,3,HTTP 200,
+personal-finance,Money Smart,FDIC,https://www.fdic.gov/resources/consumers/money-smart/index.html,course,beginner,15,HTTP 200,
+personal-finance,Economic Education Resources,Federal Reserve Bank of San Francisco,https://www.frbsf.org/education/,text,beginner,10,HTTP 200,
+personal-finance,NerdWallet Learn,NerdWallet,https://www.nerdwallet.com/,text,beginner,15,HTTP 200,Site root URL (check it is a learning resource)
+personal-finance,NFCC Financial Education,National Foundation for Credit Counseling,https://www.nfcc.org/resources/,text,beginner,10,HTTP 200,
+personal-finance,Personal Finance Basics,Khan Academy,https://www.khanacademy.org/college-careers-more/personal-finance,video,beginner,15,Verified in headless browser,
+foreign-languages,Lifeprint ASL,Lifeprint,https://www.lifeprint.com/,course,beginner,40,HTTP 200,Site root URL (check it is a learning resource)
+foreign-languages,Wiktionary,Wiktionary,https://en.wiktionary.org/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+foreign-languages,Learn German with Anja,YouTube — Learn German with Anja,https://www.youtube.com/@LearnGermanwithAnja,video,beginner,30,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+foreign-languages,Learn French with Alexa,YouTube — Learn French with Alexa,https://www.youtube.com/@LearnFrenchWithAlexa,video,beginner,30,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+foreign-languages,Yoyo Chinese,YouTube — Yoyo Chinese,https://www.youtube.com/@YoyoChinese,video,beginner,25,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+foreign-languages,Japanese Study Resources,Tofugu,https://www.tofugu.com/,text,beginner,15,HTTP 200,Site root URL (check it is a learning resource)
+graphic-design,Canva Learn,Canva Learn,https://www.canva.com/learn/,text,beginner,10,Verified in headless browser,
+graphic-design,Satori Graphics YouTube,YouTube — Satori Graphics,https://www.youtube.com/@SatoriGraphics,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+graphic-design,Typewolf,Typewolf,https://www.typewolf.com/,text,intermediate,10,HTTP 200,Site root URL (check it is a learning resource)
+graphic-design,Sessions Color Calculator,Sessions College,https://www.sessions.edu/color-calculator/,interactive,beginner,3,HTTP 200,
+graphic-design,Design Council,Design Council (UK),https://www.designcouncil.org.uk/,text,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+graphic-design,Logo Design Love,Logo Design Love,https://www.logodesignlove.com/,text,beginner,10,HTTP 200,Site root URL (check it is a learning resource)
+digital-marketing,Search Engine Journal,Search Engine Journal,https://www.searchenginejournal.com/,text,intermediate,15,HTTP 200,Site root URL (check it is a learning resource)
+digital-marketing,HubSpot Marketing Blog,HubSpot,https://blog.hubspot.com/marketing,text,beginner,15,HTTP 200,
+digital-marketing,Neil Patel Blog,Neil Patel,https://neilpatel.com/blog/,text,intermediate,15,HTTP 200,
+digital-marketing,Mailchimp Marketing Guides,Mailchimp,https://mailchimp.com/resources/,text,beginner,10,Free content; page shows a free-trial banner (check for upsell),
+digital-marketing,Semrush YouTube,YouTube — Semrush,https://www.youtube.com/@Semrush,video,beginner,15,Free content; page shows a free-trial banner (check for upsell),"YouTube channel (free, no sign-in needed)"
+photography,Adorama Learning Center,Adorama,https://www.adorama.com/alc/,text,beginner,15,HTTP 200,
+photography,Nikon Learn and Explore,Nikon,https://www.nikonusa.com/en/learn-and-explore/index.page,text,beginner,10,HTTP 200,
+video-editing,Filmmaker IQ YouTube,YouTube — Filmmaker IQ,https://www.youtube.com/@FilmmakerIQ,video,intermediate,15,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+video-editing,No Film School YouTube,YouTube — No Film School,https://www.youtube.com/@NoFilmSchool,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+music-production,Ableton YouTube,YouTube — Ableton,https://www.youtube.com/@ableton,video,beginner,25,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+music-production,Hooktheory Theorytab,Hooktheory,https://www.hooktheory.com/theorytab,interactive,beginner,10,HTTP 200,
+ui-ux-design,Nielsen Norman Group YouTube,YouTube — Nielsen Norman Group,https://www.youtube.com/@NNgroup,video,intermediate,15,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+cloud-computing,Cloud Native Glossary,Cloud Native Computing Foundation,https://glossary.cncf.io/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+cloud-computing,Learn Cloud Computing Basics,Azure Documentation,https://learn.microsoft.com/en-us/azure/architecture/,text,intermediate,10,HTTP 200,
+cybersecurity,Cybersecurity Learning (NCSC),UK National Cyber Security Centre,https://www.ncsc.gov.uk/,text,beginner,5,HTTP 200,Site root URL (check it is a learning resource)
+cybersecurity,Cyber Aware,UK Government,https://www.cyberaware.gov.uk/,text,beginner,3,HTTP 200,Site root URL (check it is a learning resource)
+cybersecurity,Security Learning Hub,SANS Institute,https://www.sans.org/white-papers/,text,intermediate,20,HTTP 200,
+photography,Lightstalking,Lightstalking,https://www.lightstalking.com/,text,intermediate,10,HTTP 200,Site root URL (check it is a learning resource)
+photography,Photography Basics Articles,Nikon,https://www.nikonusa.com/en/learn-and-explore/a/tips-and-techniques/index.page,text,beginner,5,HTTP 200,
+fitness,Chris Heria YouTube,YouTube — Chris Heria,https://www.youtube.com/@ChrisHeria,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+fitness,NHS Walking for Health,NHS (UK),https://www.nhs.uk/live-well/exercise/walking-for-health/,text,beginner,2,HTTP 200,
+fitness,Squat University YouTube,YouTube — Squat University,https://www.youtube.com/@SquatUniversity,video,beginner,15,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+cooking,Bon Appetit YouTube,YouTube — Bon Appetit,https://www.youtube.com/@bonappetit,video,beginner,20,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+cooking,Food Wishes Channel,YouTube — Food Wishes,https://www.youtube.com/@foodwishes,video,beginner,25,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+cooking,Eat Right Food Guide,Academy of Nutrition and Dietetics,https://www.eatright.org/food,text,beginner,5,HTTP 200,
+personal-finance,Money Guide,USA.gov,https://www.usa.gov/money,text,beginner,5,HTTP 200,
+personal-finance,FDIC Consumer Education,FDIC,https://www.fdic.gov/education,text,beginner,5,HTTP 200,
+music-production,Music Theory Academy YouTube,YouTube — Music Theory Academy,https://www.youtube.com/@MusicTheoryAcademy,video,beginner,15,Channel exists (HTTP 200),"YouTube channel (free, no sign-in needed)"
+music-production,BandLab Learn,BandLab,https://www.bandlab.com/learn,course,beginner,10,HTTP 200,
+music-production,LANDR Blog,LANDR,https://blog.landr.com/,text,intermediate,15,HTTP 200,Site root URL (check it is a learning resource)
+ui-ux-design,WebAIM Resources,WebAIM,https://webaim.org/,text,intermediate,10,HTTP 200,Site root URL (check it is a learning resource)
+ui-ux-design,UXPin Blog,UXPin,https://www.uxpin.com/studio/blog/,text,beginner,10,HTTP 200,
+cloud-computing,AWS Getting Started,Amazon Web Services,https://aws.amazon.com/getting-started/,course,beginner,10,HTTP 200,
+cloud-computing,Overview of Amazon Web Services,Amazon Web Services,https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html,text,beginner,3,HTTP 200,
+cloud-computing,Google Cloud Documentation Tutorials,Google Cloud,https://cloud.google.com/docs/tutorials,interactive,beginner,10,HTTP 200,
+public-speaking,TED's Secret to Great Public Speaking,TED,https://www.ted.com/talks/chris_anderson_teds_secret_to_great_public_speaking,video,beginner,0.2,HTTP 200,
+public-speaking,TED Talks on Public Speaking,TED,https://www.ted.com/playlists/226/before_public_speaking,video,beginner,1,HTTP 200,
+public-speaking,TED Topic: Public Speaking,TED,https://www.ted.com/topics/public+speaking,video,beginner,2,HTTP 200,
+public-speaking,10 Tips for Speaking Like a TED Talk Pro,American Psychological Association,https://www.apa.org/monitor/2017/02/tips-speaking,text,beginner,0.2,HTTP 200,
+public-speaking,Talk Nerdy to Me,TED,https://www.ted.com/talks/melissa_marshall_talk_nerdy_to_me,video,beginner,0.2,HTTP 200,
