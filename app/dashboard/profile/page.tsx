@@ -10,6 +10,7 @@ import { useSkillStore } from '@/lib/store';
 import { useHydrated } from '@/lib/use-hydrated';
 import { CATEGORY_BY_ID } from '@/lib/categories';
 import { DifficultyBadge } from '@/components/ui/Badge';
+import { SignOutButton } from '@/components/auth/SignOutButton';
 
 const schema = z.object({
   fullName: z.string().trim().min(2, 'Enter your name.').max(80),
@@ -99,6 +100,12 @@ export default function ProfilePage() {
           </form>
         )}
         <p role="status" className="text-sm text-beginner">{savedMsg && <span className="inline-flex items-center gap-1"><Check aria-hidden="true" className="h-4 w-4" /> Profile saved</span>}</p>
+
+        {auth.status === 'authed' && (
+          <div className="border-t border-line pt-5">
+            <SignOutButton className="btn-ghost !py-2 text-sm" />
+          </div>
+        )}
       </section>
 
       <div className="min-w-0 space-y-8">

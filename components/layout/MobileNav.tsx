@@ -2,15 +2,22 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Compass, History, Home, Info, LayoutDashboard } from 'lucide-react';
+import { Compass, History, Home, LayoutDashboard, UserRound } from 'lucide-react';
 
 const ITEMS = [
   { href: '/', label: 'Home', icon: Home },
   { href: '/search', label: 'Explore', icon: Compass },
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/dashboard/history', label: 'History', icon: History },
-  { href: '/about', label: 'About', icon: Info },
+  { href: '/dashboard/profile', label: 'Profile', icon: UserRound },
 ];
+
+/** Dashboard is "active" on its overview and on roadmap detail pages, not on History or Profile. */
+function isActive(href: string, pathname: string) {
+  if (href === '/') return pathname === '/';
+  if (href === '/dashboard') return pathname === '/dashboard' || pathname.startsWith('/dashboard/roadmap');
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
 
 /** Bottom navigation for small screens (PWA-style app bar). */
 export function MobileNav() {
@@ -24,7 +31,7 @@ export function MobileNav() {
     >
       <ul className="grid grid-cols-5">
         {ITEMS.map(({ href, label, icon: Icon }) => {
-          const active = href === '/' ? pathname === '/' : pathname.startsWith(href);
+          const active = isActive(href, pathname);
           return (
             <li key={href}>
               <Link

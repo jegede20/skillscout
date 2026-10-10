@@ -48,7 +48,8 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   return (
     <div className="mx-auto max-w-content px-4 pt-8">
-      <nav aria-label="Dashboard" className="mb-8 flex gap-2 overflow-x-auto pb-1">
+      {/* Phones use the bottom tab bar for these pages, so the tab row is desktop-only. */}
+      <nav aria-label="Dashboard" className="mb-8 hidden gap-2 overflow-x-auto pb-1 md:flex">
         {TABS.map((t) => {
           const active = t.href === '/dashboard' ? pathname === '/dashboard' : pathname.startsWith(t.href);
           return (
