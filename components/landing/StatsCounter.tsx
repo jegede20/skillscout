@@ -29,17 +29,17 @@ export function StatsCounter({ resources, skills, learners }: { resources: numbe
     { label: 'skills mapped', node: <Counter to={skills} suffix="+" /> },
     {
       label: 'learners',
-      node: learners !== null ? <Counter to={learners} suffix="+" /> : <span>Be the first</span>,
+      node: learners !== null ? <Counter to={learners} suffix="+" /> : <span className="block text-base leading-tight sm:text-3xl">Be the first</span>,
     },
   ];
 
   return (
     <section aria-label="Platform statistics" className="mx-auto max-w-content px-4">
-      <dl className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <dl className="grid grid-cols-3 gap-2 sm:gap-4">
         {stats.map((s) => (
-          <div key={s.label} className="card-surface flex flex-col items-start p-6">
-            <dt className="order-2 mt-1 font-mono text-sm uppercase tracking-wider text-muted">{s.label}</dt>
-            <dd className="order-1 font-display text-5xl font-bold tracking-tight md:text-6xl">{s.node}</dd>
+          <div key={s.label} className="card-surface flex min-w-0 flex-col items-start p-3 sm:p-6">
+            <dt className="order-2 mt-1 font-mono text-[10px] uppercase leading-tight tracking-wider text-muted sm:text-sm">{s.label}</dt>
+            <dd className="order-1 font-display text-2xl font-bold tracking-tight sm:text-5xl md:text-6xl">{s.node}</dd>
           </div>
         ))}
       </dl>

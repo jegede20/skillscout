@@ -15,6 +15,8 @@ const ITEMS = [
 /** Bottom navigation for small screens (PWA-style app bar). */
 export function MobileNav() {
   const pathname = usePathname();
+  // The landing page has its own hero navigation, so the tab bar stays hidden there.
+  if (pathname === '/') return null;
   return (
     <nav
       aria-label="Mobile"

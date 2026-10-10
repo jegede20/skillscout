@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { OAuthButton } from './OAuthButton';
+import { PasswordInput } from './PasswordInput';
 import { getSupabase, isSupabaseConfigured } from '@/lib/supabase/browser';
 import { useSkillStore } from '@/lib/store';
 import { signInSchema } from '@/lib/schemas';
@@ -76,11 +76,9 @@ export function SignInForm({ next }: { next?: string }) {
         <label htmlFor="password" className="mb-1.5 block text-sm font-medium">
           Password
         </label>
-        <input
+        <PasswordInput
           id="password"
-          type="password"
           autoComplete="current-password"
-          className="input-base"
           aria-invalid={!!errors.password}
           aria-describedby={errors.password ? 'password-error' : undefined}
           {...register('password')}
@@ -101,13 +99,6 @@ export function SignInForm({ next }: { next?: string }) {
       <button type="submit" disabled={isSubmitting} className="btn-primary w-full !py-3">
         {isSubmitting ? 'Signing in…' : 'Sign in'}
       </button>
-
-      <div className="relative py-2 text-center text-xs uppercase tracking-wider text-muted">
-        <span className="bg-surface px-3 relative z-10">or</span>
-        <span aria-hidden="true" className="absolute inset-x-0 top-1/2 h-px bg-line" />
-      </div>
-
-      <OAuthButton next={destination} label="Sign in with Google" />
 
       <p className="text-center text-sm text-muted">
         Don’t have an account?{' '}

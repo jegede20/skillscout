@@ -1,7 +1,15 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Logo } from '@/components/brand/Logo';
 
+/** Pages where the footer is hidden: the auth forms and the Explore results page. */
+const HIDDEN_ON = ['/auth', '/search'];
+
 export function Footer() {
+  const pathname = usePathname();
+  if (HIDDEN_ON.some((p) => pathname === p || pathname.startsWith(`${p}/`))) return null;
   return (
     <footer className="mt-24 border-t border-line bg-surface">
       <div className="mx-auto grid max-w-content gap-10 px-4 py-12 md:grid-cols-3">
