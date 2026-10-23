@@ -9,6 +9,7 @@ export interface AuthUser {
   name: string;
   email: string;
   avatarUrl: string | null;
+  bio: string;
 }
 
 export interface AuthState {
@@ -38,6 +39,7 @@ export function useAuthState(): AuthState {
               email: u.email ?? '',
               name: (u.user_metadata?.full_name as string) || u.email?.split('@')[0] || 'Learner',
               avatarUrl: (u.user_metadata?.avatar_url as string) || null,
+              bio: (u.user_metadata?.bio as string) || '',
             },
           }
         : { status: 'anon', user: null, mode: 'supabase' };
@@ -52,6 +54,6 @@ export function useAuthState(): AuthState {
   // Demo mode: derive from the persisted store once hydrated.
   if (!hydrated) return { status: 'loading', user: null, mode: 'demo' };
   return demoUser
-    ? { status: 'authed', mode: 'demo', user: { id: 'demo', name: demoUser.fullName || 'Learner', email: demoUser.email, avatarUrl: demoUser.avatarUrl ?? null } }
+    ? { status: 'authed', mode: 'demo', user: { id: 'demo', name: demoUser.fullName || 'Learner', email: demoUser.email, avatarUrl: demoUser.avatarUrl ?? null, bio: '' } }
     : { status: 'anon', mode: 'demo', user: null };
 }

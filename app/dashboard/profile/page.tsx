@@ -32,6 +32,11 @@ export default function ProfilePage() {
   const [savedMsg, setSavedMsg] = useState(false);
   const [photoBusy, setPhotoBusy] = useState(false);
   const [photoError, setPhotoError] = useState('');
+  const [saveError, setSaveError] = useState('');
+
+  // Signed-in accounts keep name and bio in the Supabase user record, so they follow the user across devices.
+  const savedName = auth.mode === 'supabase' ? auth.user?.name ?? '' : profile.fullName || auth.user?.name || '';
+  const savedBio = auth.mode === 'supabase' ? auth.user?.bio ?? '' : profile.bio;
 
   const {
     register,
@@ -41,8 +46,8 @@ export default function ProfilePage() {
   } = useForm<Values>({ resolver: zodResolver(schema), defaultValues: { fullName: '', bio: '' } });
 
   useEffect(() => {
-    if (hydrated) reset({ fullName: profile.fullName || auth.user?.name || '', bio: profile.bio });
-  }, [hydrated, profile.fullName, profile.bio, auth.user?.name, reset]);
+    if (hydrated) reset({ fullName: savedName, bio: savedBio });
+  }, [hydrated, savedName, savedBio, reset]);
 
   if (!hydrated) return null;
 
@@ -51,7 +56,7 @@ export default function ProfilePage() {
     (s, r) => s + r.roadmap.weeklyRoadmap.filter((w) => w.resources.length && w.resources.every((res) => r.completed[`${w.week}:${res.resourceId}`])).length,
     0,
   );
-  const initials = (profile.fullName || auth.user?.name || 'SS')
+  const initials = (savedName || 'SS')
     .split(' ')
     .map((p) => p[0])
     .slice(0, 2)
@@ -103,7 +108,15 @@ export default function ProfilePage() {
     }
   };
 
-  const onSave = (v: Values) => {
+  const onSave = async (v: Values) => {
+    setSaveError('');
+    if (auth.mode === 'supabase') {
+      const { error } = await getSupabase().auth.updateUser({ data: { full_name: v.fullName, bio: v.bio } });
+      if (error) {
+        setSaveError('Could not save your profile. Check your connection and try again.');
+        return;
+      }
+    }
     updateProfile({ fullName: v.fullName, bio: v.bio });
     setEditing(false);
     setSavedMsg(true);
@@ -123,7 +136,7 @@ export default function ProfilePage() {
             </div>
           )}
           <div className="min-w-0">
-            <h1 id="me-title" className="truncate font-display text-3xl font-bold">{profile.fullName || auth.user?.name}</h1>
+            <h1 id="me-title" className="truncate font-display text-3xl font-bold">{savedName}</h1>
             <p className="truncate text-sm text-muted">{auth.user?.email}</p>
           </div>
         </div>
@@ -151,7 +164,7 @@ export default function ProfilePage() {
 
         {!editing ? (
           <>
-            <p className="text-sm text-muted">{profile.bio || 'Add a short bio so people know what you’re working toward.'}</p>
+            <p className="text-sm text-muted">{savedBio || 'Add a short bio so people know what you’re working toward.'}</p>
             <button type="button" className="btn-ghost !py-1.5 text-sm" onClick={() => setEditing(true)}>
               <Pencil aria-hidden="true" className="h-3.5 w-3.5" /> Edit profile
             </button>
@@ -167,6 +180,7 @@ export default function ProfilePage() {
               <label htmlFor="pf-bio" className="mb-1.5 block text-sm font-medium">Bio</label>
               <textarea id="pf-bio" rows={3} className="input-base" aria-invalid={!!errors.bio} aria-describedby={errors.bio ? 'pf-bio-error' : undefined} {...register('bio')} />
               {errors.bio && <p id="pf-bio-error" role="alert" className="mt-1 text-sm text-advanced">{errors.bio.message}</p>}
+              {saveError && <p role="alert" className="mt-2 text-sm text-advanced">{saveError}</p>}
             </div>
             <div className="flex gap-2">
               <button type="submit" disabled={isSubmitting} className="btn-primary !py-2 text-sm">Save</button>

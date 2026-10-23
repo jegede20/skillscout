@@ -68,6 +68,7 @@ export default function SavedRoadmapPage() {
           roadmap={saved.roadmap}
           status={saved.roadmap.source === 'ai' ? 'ai' : 'fallback'}
           roadmapId={saved.id}
+          titleAs="h1"
           progress={saved.completed}
           onToggle={(key) => {
             const nowDone = !saved.completed[key];

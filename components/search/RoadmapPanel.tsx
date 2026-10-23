@@ -16,6 +16,8 @@ const STATUS_COPY: Record<RoadmapStatus, string> = {
 };
 
 export interface RoadmapPanelProps {
+  /** Heading level for the skill name. Saved roadmap pages pass 'h1' so the page has one top-level heading. */
+  titleAs?: 'h1' | 'h2';
   roadmap: Roadmap;
   status: RoadmapStatus;
   roadmapId: string;
@@ -33,18 +35,19 @@ export interface RoadmapPanelProps {
 }
 
 export function RoadmapPanel(props: RoadmapPanelProps) {
-  const { roadmap, status, roadmapId, progress, onToggle, onSwap, onRefresh, refreshing, onSave, saved, feedback, onFeedback, locked, unlockHref } = props;
+  const { roadmap, status, roadmapId, progress, onToggle, onSwap, onRefresh, refreshing, onSave, saved, feedback, onFeedback, locked, unlockHref, titleAs } = props;
   const weeks = roadmap.weeklyRoadmap;
   const completedWeeks = weeks.filter((w) => w.resources.length > 0 && w.resources.every((r) => progress[`${w.week}:${r.resourceId}`])).length;
 
+  const TitleTag = titleAs ?? 'h2';
   return (
     <section aria-labelledby="roadmap-title" className="relative">
       <div className={`card-surface space-y-6 p-5 md:p-6 ${locked ? 'select-none' : ''}`} aria-hidden={locked || undefined}>
         <header className="space-y-3">
           <p className="font-mono text-xs uppercase tracking-wider text-muted">Your learning path</p>
-          <h2 id="roadmap-title" className="font-display text-3xl font-bold leading-tight tracking-tight md:text-4xl">
+          <TitleTag id="roadmap-title" className="font-display text-3xl font-bold leading-tight tracking-tight md:text-4xl">
             {roadmap.skillName}
-          </h2>
+          </TitleTag>
           <div className="flex flex-wrap items-center gap-3 text-sm">
             <DifficultyBadge level={roadmap.difficulty} />
             <span className="inline-flex items-center gap-1.5 text-muted">
